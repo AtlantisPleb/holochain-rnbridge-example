@@ -17,7 +17,9 @@ console.log('Here is MobileAppBridge:', MobileAppBridge)
 
 async function displayHelloWorld (self) {
   try {
-    let text = await MobileAppBridge.sayHelloWorld("World")
+    let text = await MobileAppBridge.testholochain("World")
+    console.log(text)
+    // let text = await MobileAppBridge.sayHelloWorld("World")
     self.setState({
       hello: text
     })

@@ -26,8 +26,8 @@
 		2CA4496A210E292E005B5BD9 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA44969210E292E005B5BD9 /* String.swift */; };
 		2CA4496D210E2C8B005B5BD9 /* MobileAppBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA4496B210E2C8B005B5BD9 /* MobileAppBridge.m */; };
 		2CA4496E210E2C8B005B5BD9 /* MobileAppBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA4496C210E2C8B005B5BD9 /* MobileAppBridge.swift */; };
-		2CA44971210E65EA005B5BD9 /* libholochain_dna_c_binding.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA4496F210E65E9005B5BD9 /* libholochain_dna_c_binding.a */; };
-		2CA44972210E65EA005B5BD9 /* libholochain_core_api_c_binding.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA44970210E65E9005B5BD9 /* libholochain_core_api_c_binding.a */; };
+		2CA44975210E6F47005B5BD9 /* libholochain_core_api_c_binding.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA44973210E6F47005B5BD9 /* libholochain_core_api_c_binding.a */; };
+		2CA44976210E6F47005B5BD9 /* libholochain_dna_c_binding.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA44974210E6F47005B5BD9 /* libholochain_dna_c_binding.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -347,8 +347,8 @@
 		2CA44969210E292E005B5BD9 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = String.swift; path = rust1/String.swift; sourceTree = "<group>"; };
 		2CA4496B210E2C8B005B5BD9 /* MobileAppBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MobileAppBridge.m; path = rust1/MobileAppBridge.m; sourceTree = "<group>"; };
 		2CA4496C210E2C8B005B5BD9 /* MobileAppBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MobileAppBridge.swift; path = rust1/MobileAppBridge.swift; sourceTree = "<group>"; };
-		2CA4496F210E65E9005B5BD9 /* libholochain_dna_c_binding.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libholochain_dna_c_binding.a; path = "../rust/holochain-rust/target/release/libholochain_dna_c_binding.a"; sourceTree = "<group>"; };
-		2CA44970210E65E9005B5BD9 /* libholochain_core_api_c_binding.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libholochain_core_api_c_binding.a; path = "../rust/holochain-rust/target/release/libholochain_core_api_c_binding.a"; sourceTree = "<group>"; };
+		2CA44973210E6F47005B5BD9 /* libholochain_core_api_c_binding.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libholochain_core_api_c_binding.a; path = "../rust/holochain-rust/target/aarch64-apple-ios/release/libholochain_core_api_c_binding.a"; sourceTree = "<group>"; };
+		2CA44974210E6F47005B5BD9 /* libholochain_dna_c_binding.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libholochain_dna_c_binding.a; path = "../rust/holochain-rust/target/aarch64-apple-ios/release/libholochain_dna_c_binding.a"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* rust1-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rust1-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* rust1-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "rust1-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -372,17 +372,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CA44967210E286E005B5BD9 /* librusttut.a in Frameworks */,
+				2CA44975210E6F47005B5BD9 /* libholochain_core_api_c_binding.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
+				2CA44976210E6F47005B5BD9 /* libholochain_dna_c_binding.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
-				2CA44971210E65EA005B5BD9 /* libholochain_dna_c_binding.a in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
 				00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */,
 				133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */,
 				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
-				2CA44972210E65EA005B5BD9 /* libholochain_core_api_c_binding.a in Frameworks */,
 				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
@@ -565,8 +565,8 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				2CA44970210E65E9005B5BD9 /* libholochain_core_api_c_binding.a */,
-				2CA4496F210E65E9005B5BD9 /* libholochain_dna_c_binding.a */,
+				2CA44973210E6F47005B5BD9 /* libholochain_core_api_c_binding.a */,
+				2CA44974210E6F47005B5BD9 /* libholochain_dna_c_binding.a */,
 				2CA44966210E286E005B5BD9 /* librusttut.a */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
@@ -1241,15 +1241,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = KRX36M77JT;
-				HEADER_SEARCH_PATHS = (
-					"../rust/rusttut/**",
-					"../rust/holochain-rust/**",
-				);
+				HEADER_SEARCH_PATHS = "../rust/rusttut/**";
 				INFOPLIST_FILE = rust1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"../rust/rusttut/**",
-					"../rust/holochain-rust/**",
+					"../rust/holochain-rust/target/x86_64-apple-ios/**",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1271,15 +1268,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KRX36M77JT;
-				HEADER_SEARCH_PATHS = (
-					"../rust/rusttut/**",
-					"../rust/holochain-rust/**",
-				);
+				HEADER_SEARCH_PATHS = "../rust/rusttut/**";
 				INFOPLIST_FILE = rust1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"../rust/rusttut/**",
-					"../rust/holochain-rust/**",
+					"../rust/holochain-rust/target/x86_64-apple-ios/**",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",

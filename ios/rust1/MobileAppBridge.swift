@@ -22,7 +22,13 @@ class MobileAppBridge: NSObject {
 	}
 
 	@objc func testholochain(_ name: String, resolve: RCTPromiseResolveBlock, reject: RCTPromiseRejectBlock) -> Void {
-		let result_rust = holochain_dna_create()
-		resolve(result_rust)
+		print("In testholochain function.")
+		let dna = holochain_dna_create()
+		print("Created holochain DNA")
+		let holochain = holochain_new(dna)
+		print("Created holochain with result:")
+		print(holochain)
+		let startresult = holochain_start(holochain)
+		resolve(startresult)
 	}
 }
