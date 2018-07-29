@@ -1,0 +1,3 @@
+[submodule "rust/holochain-rust"]
+	path = rust/holochain-rust
+	url = https://github.com/holochain/holochain-rust
