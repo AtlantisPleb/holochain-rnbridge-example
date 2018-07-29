@@ -1,0 +1,6 @@
+[package]
+name = "rusttut"
+version = "0.1.0"
+authors = ["Christopher David <chris@arcade.city>"]
+
+[dependencies]
