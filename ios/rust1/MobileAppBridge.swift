@@ -20,4 +20,9 @@ class MobileAppBridge: NSObject {
 		rust_string_destroy(result_rust_str)
 		resolve(result)
 	}
+
+	@objc func testholochain(_ name: String, resolve: RCTPromiseResolveBlock, reject: RCTPromiseRejectBlock) -> Void {
+		let result_rust = holochain_dna_create()
+		resolve(result_rust)
+	}
 }

@@ -11,5 +11,6 @@
 @interface RCT_EXTERN_MODULE(MobileAppBridge, NSObject)
 
 RCT_EXTERN_METHOD(sayHelloWorld:(NSString*)name resolve:(RCTPromiseResolveBlock)resolve reject:(RCTPromiseRejectBlock)reject)
+RCT_EXTERN_METHOD(testholochain:(NSString*)param1 resolve:(RCTPromiseResolveBlock)resolve reject:(RCTPromiseRejectBlock)reject)
 
 @end
