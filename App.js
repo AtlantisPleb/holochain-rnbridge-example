@@ -13,9 +13,11 @@ import {
 } from 'react-native';
 import { MobileAppBridge } from 'NativeModules';
 
+console.log('Here is MobileAppBridge:', MobileAppBridge)
+
 async function displayHelloWorld (self) {
   try {
-    let text = await MobileAppBridge.sayHelloWorld("Android")
+    let text = await MobileAppBridge.sayHelloWorld("World")
     self.setState({
       hello: text
     })

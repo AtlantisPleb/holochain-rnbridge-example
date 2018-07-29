@@ -24,6 +24,8 @@
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		2CA44967210E286E005B5BD9 /* librusttut.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA44966210E286E005B5BD9 /* librusttut.a */; };
 		2CA4496A210E292E005B5BD9 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA44969210E292E005B5BD9 /* String.swift */; };
+		2CA4496D210E2C8B005B5BD9 /* MobileAppBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA4496B210E2C8B005B5BD9 /* MobileAppBridge.m */; };
+		2CA4496E210E2C8B005B5BD9 /* MobileAppBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA4496C210E2C8B005B5BD9 /* MobileAppBridge.swift */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -341,6 +343,8 @@
 		2CA44966210E286E005B5BD9 /* librusttut.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librusttut.a; path = ../rust/rusttut/librusttut.a; sourceTree = "<group>"; };
 		2CA44968210E292E005B5BD9 /* rust1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rust1-Bridging-Header.h"; sourceTree = "<group>"; };
 		2CA44969210E292E005B5BD9 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = String.swift; path = rust1/String.swift; sourceTree = "<group>"; };
+		2CA4496B210E2C8B005B5BD9 /* MobileAppBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MobileAppBridge.m; path = rust1/MobileAppBridge.m; sourceTree = "<group>"; };
+		2CA4496C210E2C8B005B5BD9 /* MobileAppBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MobileAppBridge.swift; path = rust1/MobileAppBridge.swift; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* rust1-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rust1-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* rust1-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "rust1-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -488,6 +492,8 @@
 		13B07FAE1A68108700A75B9A /* rust1 */ = {
 			isa = PBXGroup;
 			children = (
+				2CA4496B210E2C8B005B5BD9 /* MobileAppBridge.m */,
+				2CA4496C210E2C8B005B5BD9 /* MobileAppBridge.swift */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -1129,6 +1135,8 @@
 			files = (
 				2CA4496A210E292E005B5BD9 /* String.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				2CA4496E210E2C8B005B5BD9 /* MobileAppBridge.swift in Sources */,
+				2CA4496D210E2C8B005B5BD9 /* MobileAppBridge.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
