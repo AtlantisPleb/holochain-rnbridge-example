@@ -6,10 +6,6 @@ Demos calls to:
 * `holochain_new()`
 * `holochain_start()`
 
+[This tutorial] (https://medium.com/@marekkotewicz/building-a-mobile-app-in-rust-and-react-native-part-1-project-setup-b8dbcf3f539f) helped.
 
 # ![](https://image.ibb.co/bPQrdo/img.png)
-
-
-
-
-
