@@ -21,7 +21,7 @@ async function displayHelloWorld (self) {
     console.log(text)
     // let text = await MobileAppBridge.sayHelloWorld("World")
     self.setState({
-      hello: text
+      hello: JSON.stringify(text)
     })
   } catch (e) {
       console.log(e)
@@ -40,7 +40,7 @@ export default class mobile_app extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          RUST says: {this.state.hello}
+          Created holochain? {this.state.hello}
         </Text>
       </View>
     );
