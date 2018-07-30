@@ -1,38 +1,25 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
-import React, { Component } from 'react';
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
-import { MobileAppBridge } from 'NativeModules';
-
-console.log('Here is MobileAppBridge:', MobileAppBridge)
+import React, { Component } from 'react'
+import { AppRegistry, StyleSheet, Text, View } from 'react-native'
+import { MobileAppBridge } from 'NativeModules'
 
 async function displayHelloWorld (self) {
   try {
-    let text = await MobileAppBridge.testholochain("World")
-    console.log(text)
-    // let text = await MobileAppBridge.sayHelloWorld("World")
+    let res = await MobileAppBridge.testholochain("World")
+    console.log(res)
+
     self.setState({
-      hello: JSON.stringify(text)
+      response: JSON.stringify(res)
     })
   } catch (e) {
       console.log(e)
   }
 }
 
-export default class mobile_app extends Component {
-
+export default class rust1 extends Component {
   state = {}
 
   componentDidMount () {
+    console.log('MobileAppBridge:', MobileAppBridge)
     displayHelloWorld(this)
   }
 
@@ -40,10 +27,10 @@ export default class mobile_app extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Created holochain? {this.state.hello}
+          Created holochain? {this.state.response}
         </Text>
       </View>
-    );
+    )
   }
 }
 
@@ -58,12 +45,5 @@ const styles = StyleSheet.create({
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
-
-AppRegistry.registerComponent('mobile_app', () => mobile_app);
+  }
+})
